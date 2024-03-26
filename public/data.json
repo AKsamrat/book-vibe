@@ -1,0 +1,80 @@
+[
+  {
+    "bookId": "001",
+    "bookName": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "image": "https://i.ibb.co/4dg0JtR/pngwing-1-1.png",
+    "review": "A timeless classic that tackles issues of race and morality in the American South.",
+    "totalPages": 336,
+    "rating": 4.5,
+    "category": "Classic",
+    "tags": ["classic", "coming-of-age", "southern-literature"],
+    "publisher": "Harper Perennial Modern Classics",
+    "yearOfPublish": 1960
+  },
+  {
+    "bookId": "002",
+    "bookName": "1984",
+    "author": "George Orwell",
+    "image": "https://i.ibb.co/2ssjDVZ/kindpng-1064993.png",
+    "review": "A dystopian masterpiece that remains relevant in today's society.",
+    "totalPages": 328,
+    "rating": 4.7,
+    "category": "Fiction",
+    "tags": ["dystopian", "political-fiction", "classics"],
+    "publisher": "Signet Classic",
+    "yearOfPublish": 1949
+  },
+  {
+    "bookId": "003",
+    "bookName": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "image": "https://i.ibb.co/SdJKB0M/kindpng-7318921.png",
+    "review": "A tragic tale of love and the American Dream set in the roaring twenties.",
+    "totalPages": 180,
+    "rating": 4.2,
+    "category": "scientific",
+    "tags": ["classic", "american-literature", "roaring-twenties"],
+    "publisher": "Scribner",
+    "yearOfPublish": 1925
+  },
+  {
+    "bookId": "004",
+    "bookName": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "image": "https://i.ibb.co/gFZSGRV/kindpng-4022054-1.png",
+    "review": "A coming-of-age novel that captures the angst of adolescence.",
+    "totalPages": 277,
+    "rating": 4.4,
+    "category": "Health",
+    "tags": ["coming-of-age", "american-literature", "adolescence"],
+    "publisher": "Little, Brown and Company",
+    "yearOfPublish": 1951
+  },
+  {
+    "bookId": "005",
+    "bookName": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "image": "https://i.ibb.co/5nRGHRp/kindpng-81724-1.png",
+    "review": "A witty and romantic portrayal of societal norms and love in Regency England.",
+    "totalPages": 432,
+    "rating": 4.6,
+    "category": "Fiction",
+    "tags": ["romance", "classic", "regency"],
+    "publisher": "Penguin Classics",
+    "yearOfPublish": 1813
+  },
+  {
+    "bookId": "006",
+    "bookName": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "image": "https://i.ibb.co/By305SX/kindpng-2193744-1.png",
+    "review": "An enchanting adventure set in Middle-earth, perfect for readers of all ages.",
+    "totalPages": 310,
+    "rating": 4.8,
+    "category": "Economics",
+    "tags": ["fantasy", "adventure", "middle-earth"],
+    "publisher": "Houghton Mifflin",
+    "yearOfPublish": 1937
+  }
+]

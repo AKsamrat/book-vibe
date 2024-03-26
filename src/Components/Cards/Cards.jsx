@@ -1,32 +1,29 @@
 // import { star } from '@heroicons/vue/24/solid';
 
-const Cards = () => {
+const Cards = ({ item }) => {
+  const { category, bookName, tags, author, rating, image } = item;
   return (
-    <div>
-      <div className="card w-96  shadow-xl border-2 border-slate-200 rounded-2xl p-6">
+    <div onClick={handleCard}>
+      <div className="card w-96  shadow-xl border-2 border-slate-200 rounded-2xl p-6 h-full">
         <figure className="bg-[#F3F3F3] rounded-r-2xl">
-          <img
-            className="w-[130px] py-7"
-            src="/public/pngwing 1 (1).png"
-            alt="Shoes"
-          />
+          <img className="w-[130px] py-7 h-60" src={image} alt="Shoes" />
         </figure>
         <div className="">
           <div className="flex items-center gap-4 justify-start my-4">
             <p className="text-[#23BE0A] bg-[#235a0a0d] rounded-3xl p-1 font-bold">
-              Young Audit
+              {tags[0]}
             </p>
             <p className="text-[#23BE0A] bg-[#235a0a0d] rounded-3xl p-1 font-bold">
-              Identity
+              {tags[1]}
             </p>
           </div>
-          <h2 className="card-title">The Catcher in the Rye</h2>
-          <p className="font-semibold py-4">By:</p>
+          <h2 className="card-title text-2xl font-bold">{bookName}</h2>
+          <p className="font-semibold py-4 text-left">By:{author}</p>
           <hr />
           <div className="card-actions justify-between mt-4">
-            <div className="badge badge-outline">Fashion</div>
+            <div className="badge badge-outline">{category}</div>
             <div className="flex items-center gap-2">
-              <p>5.00</p>
+              <p>{rating}</p>
               <p>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
