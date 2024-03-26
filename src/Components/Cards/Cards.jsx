@@ -1,9 +1,11 @@
 // import { star } from '@heroicons/vue/24/solid';
 
+import { Link } from 'react-router-dom';
+
 const Cards = ({ item }) => {
-  const { category, bookName, tags, author, rating, image } = item;
+  const { category, bookName, tags, author, rating, image, bookId } = item;
   return (
-    <div onClick={handleCard}>
+    <Link to={`/details/${bookId}`}>
       <div className="card w-96  shadow-xl border-2 border-slate-200 rounded-2xl p-6 h-full">
         <figure className="bg-[#F3F3F3] rounded-r-2xl">
           <img className="w-[130px] py-7 h-60" src={image} alt="Shoes" />
@@ -44,7 +46,7 @@ const Cards = ({ item }) => {
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

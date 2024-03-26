@@ -4,7 +4,8 @@
     "bookName": "To Kill a Mockingbird",
     "author": "Harper Lee",
     "image": "https://i.ibb.co/4dg0JtR/pngwing-1-1.png",
-    "review": "A timeless classic that tackles issues of race and morality in the American South.",
+    "review": "A timeless classic, To Kill a Mockingbird by Harper Lee is a poignant narrative that explores themes of racial injustice, morality, and empathy in the American South. Through the innocent perspective of Scout Finch, the story unfolds with depth and sincerity, offering profound insights into the human condition. With its rich characters and compelling storyline, the novel resonates with readers of all ages, provoking introspection and fostering understanding. Harper Lee's masterful prose and evocative storytelling make this novel an enduring masterpiece, serving as a reminder of the importance of compassion and integrity in society.",
+
     "totalPages": 336,
     "rating": 4.5,
     "category": "Classic",
@@ -14,10 +15,11 @@
   },
   {
     "bookId": "002",
-    "bookName": "1984",
+    "bookName": "The Hate You Give",
     "author": "George Orwell",
     "image": "https://i.ibb.co/2ssjDVZ/kindpng-1064993.png",
-    "review": "A dystopian masterpiece that remains relevant in today's society.",
+    "review": "George Orwell's 1984 stands as a haunting depiction of a totalitarian regime where truth is subjective and individuality is suppressed. Set in a dystopian future, the novel follows Winston Smith as he navigates a world dominated by omnipresent government surveillance and manipulation. Orwell's prophetic vision of mass surveillance, thought control, and propaganda remains alarmingly relevant in today's society. Through its chilling portrayal of power and oppression, 1984 serves as a cautionary tale, urging readers to remain vigilant against threats to freedom and democracy. With its compelling narrative and thought-provoking themes, this classic continues to captivate and unsettle audiences worldwide.",
+
     "totalPages": 328,
     "rating": 4.7,
     "category": "Fiction",
@@ -30,7 +32,8 @@
     "bookName": "The Great Gatsby",
     "author": "F. Scott Fitzgerald",
     "image": "https://i.ibb.co/SdJKB0M/kindpng-7318921.png",
-    "review": "A tragic tale of love and the American Dream set in the roaring twenties.",
+    "review": "F. Scott Fitzgerald's The Great Gatsby is a mesmerizing portrayal of the Jazz Age, exploring themes of love, wealth, and the elusive American Dream. Through the eyes of narrator Nick Carraway, readers are drawn into the extravagant world of Jay Gatsby and his pursuit of the enigmatic Daisy Buchanan. Fitzgerald's lyrical prose and keen observations capture the allure and disillusionment of the Roaring Twenties with unparalleled elegance. As the story unfolds with tragic inevitability, The Great Gatsby stands as a timeless masterpiece, inviting readers to reflect on the nature of ambition, identity, and the pursuit of happiness.",
+
     "totalPages": 180,
     "rating": 4.2,
     "category": "scientific",
@@ -43,7 +46,8 @@
     "bookName": "The Catcher in the Rye",
     "author": "J.D. Salinger",
     "image": "https://i.ibb.co/gFZSGRV/kindpng-4022054-1.png",
-    "review": "A coming-of-age novel that captures the angst of adolescence.",
+    "review": "J.D. Salinger's The Catcher in the Rye is a seminal coming-of-age novel that continues to resonate with readers across generations. Narrated by the disillusioned teenager Holden Caulfield, the story unfolds as a poignant exploration of alienation, identity, and the search for authenticity in a superficial world. Salinger's distinctive voice and candid portrayal of adolescence capture the angst and uncertainty of youth with unparalleled authenticity. As Holden embarks on his existential journey through the streets of New York City, readers are compelled to confront universal truths about innocence, loss, and the complexities of growing up.",
+
     "totalPages": 277,
     "rating": 4.4,
     "category": "Health",
@@ -56,7 +60,8 @@
     "bookName": "Pride and Prejudice",
     "author": "Jane Austen",
     "image": "https://i.ibb.co/5nRGHRp/kindpng-81724-1.png",
-    "review": "A witty and romantic portrayal of societal norms and love in Regency England.",
+    "review": "Jane Austen's Pride and Prejudice is a timeless masterpiece of romantic fiction, celebrated for its wit, social commentary, and unforgettable characters. Set in the Regency era, the novel follows the spirited Elizabeth Bennet as she navigates the complexities of love, marriage, and social status in Georgian England. Austen's keen observations and sparkling dialogue bring to life a vibrant cast of characters, from the proud Mr. Darcy to the charming Mr. Bingley. With its enduring charm and enduring appeal, Pride and Prejudice continues to captivate readers with its irresistible blend of romance, wit, and social satire.",
+
     "totalPages": 432,
     "rating": 4.6,
     "category": "Fiction",
@@ -69,7 +74,8 @@
     "bookName": "The Hobbit",
     "author": "J.R.R. Tolkien",
     "image": "https://i.ibb.co/By305SX/kindpng-2193744-1.png",
-    "review": "An enchanting adventure set in Middle-earth, perfect for readers of all ages.",
+    "review": "J.R.R. Tolkien's The Hobbit is an enchanting tale of adventure set in the wondrous world of Middle-earth. Bilbo Baggins, a humble hobbit, is swept into an epic quest to reclaim the lost kingdom of Erebor from the fearsome dragon Smaug. Joined by a band of dwarves and the wizard Gandalf, Bilbo embarks on a journey filled with peril, magic, and unexpected friendships. Tolkien's rich imagination and masterful storytelling transport readers to a realm of wonder and adventure, where courage and heroism are found in the most unlikely of places. The Hobbit remains a timeless classic for readers of all ages.",
+
     "totalPages": 310,
     "rating": 4.8,
     "category": "Economics",
