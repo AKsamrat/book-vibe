@@ -1,7 +1,10 @@
+import { useContext } from 'react';
 import UseBookData from '../../Hooks/UseBookData';
 import UseLocalStorage from '../../Hooks/UseLocalStorage';
+import { AssetContext } from '../../Pages/Listedbook';
 
 const WishList = () => {
+  const sortedData = useContext(AssetContext);
   const { localData } = UseLocalStorage('wishlist') || {};
   const { data, loading } = UseBookData();
   // console.log(localData);
@@ -11,7 +14,7 @@ const WishList = () => {
   // return 'good';
   return (
     <div>
-      {getData.map(fData => (
+      {sortedData.map(fData => (
         <div
           className="  mt-8 space-y-3 border-2 border-slate-200 rounded-xl"
           key={fData.bookId}

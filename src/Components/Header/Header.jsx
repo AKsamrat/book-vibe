@@ -53,7 +53,7 @@ const Header = () => {
       </li>
       <li>
         <NavLink
-          to="/statistics"
+          to="/article"
           className={({ isActive, isPending }) =>
             isActive ? (
               'text-[#23BE0A] border-2 border-[#23BE0A] font-bold hover:bg-[#23BE0A] hover:text-white'
@@ -64,12 +64,12 @@ const Header = () => {
             )
           }
         >
-          Statistics
+          Blog
         </NavLink>
       </li>
       <li>
         <NavLink
-          to="/blogs"
+          to="/contact"
           className={({ isActive, isPending }) =>
             isActive ? (
               'text-[#23BE0A] border-2 border-[#23BE0A] font-bold hover:bg-[#23BE0A] hover:text-white'
@@ -80,7 +80,7 @@ const Header = () => {
             )
           }
         >
-          Blogs
+          Contact Us
         </NavLink>
       </li>
     </>

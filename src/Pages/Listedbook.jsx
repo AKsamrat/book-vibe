@@ -60,7 +60,7 @@ const Listedbook = () => {
   return (
     <div>
       <div className="bg-[#F3F3F3] rounded-xl ">
-        <p className="text-2xl font-bold text-center py-7 ">Books</p>
+        <p className="text-4xl font-bold text-center py-7 ">Books</p>
       </div>
 
       <AssetContext.Provider value={displayData}>

@@ -13,6 +13,8 @@ import ReadBooks from './Components/ReadBooks/ReadBooks.jsx';
 import WishList from './Components/WhishList/WishList.jsx';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Article from './Pages/Article.jsx';
+import Contact from './Pages/Contact.jsx';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -26,6 +28,14 @@ const router = createBrowserRouter([
       {
         path: '/pagesToread',
         element: <PagesToRead></PagesToRead>,
+      },
+      {
+        path: '/article',
+        element: <Article></Article>,
+      },
+      {
+        path: '/contact',
+        element: <Contact></Contact>,
       },
       {
         path: '/listedBooks',
