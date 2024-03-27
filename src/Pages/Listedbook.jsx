@@ -13,9 +13,23 @@ const Listedbook = () => {
 
   const handleJobsFilter = filter => {
     if (filter === 'rating') {
-      setDisplayData(allData.sort((a, b) => b.rating - a.rating));
+      setDisplayData(
+        [...allData].sort(function (a, b) {
+          return b.rating - a.rating;
+        })
+      );
     } else if (filter === 'NumberOfPage') {
-      setDisplayData(allData.sort((a, b) => b.totalPages - a.totalPages));
+      setDisplayData(
+        [...allData].sort(function (a, b) {
+          return b.totalPages - a.totalPages;
+        })
+      );
+    } else if (filter === 'publishYear') {
+      setDisplayData(
+        [...allData].sort(function (a, b) {
+          return b.yearOfPublish - a.yearOfPublish;
+        })
+      );
     }
   };
   // console.log(data);
@@ -52,22 +66,25 @@ const Listedbook = () => {
       <AssetContext.Provider value={displayData}>
         {/* sortby section ----  */}
 
-        <details className="dropdown">
-          <summary className="m-1 btn bg-[#23BE0A] text-white px-6 ">
-            Sort By
-          </summary>
-          <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
-            <li onClick={() => handleJobsFilter('rating')}>
-              <a>Rating</a>
-            </li>
-            <li onClick={() => handleJobsFilter('NumberOfPage')}>
-              <a>Number of page</a>
-            </li>
-            <li onClick={() => handleJobsFilter('publishYear')}>
-              <a>Publish Year</a>
-            </li>
-          </ul>
-        </details>
+        <div className="flex justify-center items-center">
+          <details className="dropdown ">
+            <summary className="m-1 btn bg-[#23BE0A] text-white px-6 items-center  ">
+              Sort By
+            </summary>
+
+            <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
+              <li onClick={() => handleJobsFilter('rating')}>
+                <a>Rating</a>
+              </li>
+              <li onClick={() => handleJobsFilter('NumberOfPage')}>
+                <a>Number of page</a>
+              </li>
+              <li onClick={() => handleJobsFilter('publishYear')}>
+                <a>Publish Year</a>
+              </li>
+            </ul>
+          </details>
+        </div>
 
         {/* tabs section======= */}
 

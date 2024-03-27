@@ -16,12 +16,12 @@ const DetailsPage = () => {
   const fData = data.find(item => item.bookId == bookId) || {};
 
   const handleRead = value => {
-    const localData = getStoreApplication('wishlist') || {};
+    const localData = getStoreApplication('read') || {};
     // console.log(bookId, localData, !localData.includes(bookId));
     if (localData.includes(bookId)) {
-      saveBookData(bookId, value);
+      // saveBookData(bookId, value);
       // const isExist = localData.find(data => data.indexOf(bookId));
-      toast('Sucesfully Added to read!');
+      toast('Already Added to read!');
       // console.log(i);
       // localStorage.removeItem('wishlist', localData[isExist]);
       // setWishList(bookId);
@@ -57,11 +57,15 @@ const DetailsPage = () => {
     <div>
       <div className="hero min-h-screen mt-8 space-y-3">
         <div className="hero-content flex-col lg:flex-row text-left">
-          <div className=" rounded-lg  bg-[#F3F3F3] p-20 flex-1">
-            <img className="h-[560px] w-[420px]" src={fData.image} alt="" />
+          <div className=" rounded-lg  bg-[#F3F3F3] p-6 lg:p-20 flex-1">
+            <img
+              className="h-[400px]  lg:h-[560px] w-[300px] lg:w-[420px]"
+              src={fData.image}
+              alt=""
+            />
           </div>
           <div className="flex-1">
-            <h1 className="text-5xl font-bold">{fData.bookName}</h1>
+            <h1 className="text-3xl lg:text-5xl font-bold">{fData.bookName}</h1>
             <p className="py-6 font-bold">By: {fData.author}</p>
             <hr />
             <p className="my-2">{fData.category}</p>
@@ -71,10 +75,10 @@ const DetailsPage = () => {
             </p>
             <div className="flex items-center gap-4 justify-start my-4">
               <p className="font-bold">Tag </p>
-              <p className="text-[#23BE0A] bg-[#235a0a0d] rounded-3xl py-1 px-3 font-bold">
+              <p className="text-[#23BE0A] bg-[#235a0a0d] rounded-3xl py-1 px-1 lg:px-3 font-bold text-center">
                 {fData.tags?.[0]}
               </p>
-              <p className="text-[#23BE0A] bg-[#235a0a0d] rounded-3xl py-1 px-3 font-bold">
+              <p className="text-[#23BE0A] bg-[#235a0a0d] rounded-3xl py-1 px-1 lg:px-3 font-bold text-center">
                 {fData.tags?.[1]}
               </p>
             </div>

@@ -27,17 +27,17 @@ const ReadBooks = () => {
             </div>
             <div className="">
               <h1 className="text-2xl font-bold">{fData.bookName}</h1>
-              <p className="py-6 font-bold">By: {fData.author}</p>
+              <p className="py-2 lg:py-4 font-bold">By: {fData.author}</p>
 
               <div className="flex items-center gap-4 justify-start my-4">
                 <p className="font-bold">Tag </p>
-                <p className="text-[#23BE0A] bg-[#235a0a0d] rounded-3xl py-1 px-3 font-bold">
+                <p className="text-[#23BE0A] bg-[#235a0a0d] rounded-3xl py-1 px-1 lg:px-3 font-bold text-center">
                   {fData.tags?.[0]}
                 </p>
-                <p className="text-[#23BE0A] bg-[#235a0a0d] rounded-3xl py-1 px-3 font-bold">
+                <p className="text-[#23BE0A] bg-[#235a0a0d] rounded-3xl py-1 px-1 lg:px-3 font-bold text-center">
                   {fData.tags?.[1]}
                 </p>
-                <div className="flex justify-start gap-4">
+                <div className="flex justify-start gap-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -61,7 +61,7 @@ const ReadBooks = () => {
                   <p>Year of publish :{fData.yearOfPublish} </p>
                 </div>
               </div>
-              <div className="flex justify-start items-center gap-3">
+              <div className="flex justify-start items-center gap-3 my-3">
                 <div className="flex justify-start items-center gap-3">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -99,7 +99,7 @@ const ReadBooks = () => {
                 </div>
               </div>
               <hr />
-              <div className="space-y-3 flex items-center gap-5 justify-start">
+              <div className="space-y-3 flex items-center gap-2 lg:gap-5 justify-start">
                 <p className=" bg-[#E0EEFF] text-[#328EFF] px-4 rounded-3xl py-1 mt-2">
                   Category:{fData.category}
                 </p>
@@ -108,7 +108,9 @@ const ReadBooks = () => {
                 </p>
 
                 <a className=" bg-[#23BE0A] text-white px-4 rounded-3xl py-1">
-                  View details
+                  <p className="flex justify-center items-center gap-1">
+                    <span className="hidden lg:flex ">View</span>Details
+                  </p>
                 </a>
               </div>
             </div>
