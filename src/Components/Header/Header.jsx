@@ -123,7 +123,9 @@ const Header = () => {
         </div>
         <div className="navbar-end gap-3">
           <a className="btn bg-[#23BE0A] text-white px-6">Sign In</a>
-          <a className="btn bg-[#59C6D2] text-white px-5">Sign Up</a>
+          <a className="btn bg-[#59C6D2] text-white px-5 hidden lg:flex">
+            Sign Up
+          </a>
         </div>
       </div>
     </div>

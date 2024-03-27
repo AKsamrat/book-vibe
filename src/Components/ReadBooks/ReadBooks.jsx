@@ -1,9 +1,14 @@
+import { useContext, useState } from 'react';
 import UseLocalStorage from '../../Hooks/UseLocalStorage';
 import UseBookData from './../../Hooks/UseBookData';
+import { AssetContext } from '../../Pages/Listedbook';
 
 const ReadBooks = () => {
+  const sortedData = useContext(AssetContext);
+  console.log(sortedData);
   const { localData } = UseLocalStorage('read') || {};
   const { data, loading } = UseBookData();
+  const [sort, setSort] = useState([]);
   // console.log(localData);
   const getData = data.filter(item => localData.includes(item.bookId)) || {};
 
@@ -11,7 +16,7 @@ const ReadBooks = () => {
   // return 'good';
   return (
     <div>
-      {getData.map(fData => (
+      {sortedData.map(fData => (
         <div
           className="  mt-8 space-y-3 border-2 border-slate-200 rounded-xl"
           key={fData.bookId}

@@ -6,6 +6,7 @@ import {
 } from '../Components/Utility/LocalStorage';
 import UseLocalStorage from '../Hooks/UseLocalStorage';
 import { useEffect, useState } from 'react';
+import { toast } from 'react-toastify';
 
 const DetailsPage = () => {
   const { wishList, setWishList } = useState([]);
@@ -13,20 +14,34 @@ const DetailsPage = () => {
   const { bookId } = useParams();
   // const intId = parseInt(bookId);
   const fData = data.find(item => item.bookId == bookId) || {};
+
   const handleRead = value => {
-    saveBookData(bookId, value);
+    const localData = getStoreApplication('wishlist') || {};
+    // console.log(bookId, localData, !localData.includes(bookId));
+    if (localData.includes(bookId)) {
+      saveBookData(bookId, value);
+      // const isExist = localData.find(data => data.indexOf(bookId));
+      toast('Sucesfully Added to read!');
+      // console.log(i);
+      // localStorage.removeItem('wishlist', localData[isExist]);
+      // setWishList(bookId);
+    } else {
+      saveBookData(bookId, value);
+      toast('Sucesfully Added to read!');
+    }
   };
   // const { localData } = UseLocalStorage('read') || {};
 
   const handleWishlist = values => {
     const localData = getStoreApplication('read') || {};
     // const isExist = localData.find(data => data.bookId === bookId);
-    console.log(bookId, localData, !localData.includes(values));
+
     if (!localData.includes(bookId)) {
       saveBookData(bookId, values);
+      toast('Sucesfully Added wishlist!');
       // setWishList(bookId);
     } else {
-      alert('Book already read');
+      toast('Book already read !!!!');
     }
   };
   // useEffect(() => {
