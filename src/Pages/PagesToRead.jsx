@@ -11,12 +11,13 @@ import {
   Legend,
 } from 'recharts';
 import UseBookData from '../Hooks/UseBookData';
-
 const PagesToRead = () => {
   const allReadData = getStoreApplication('read');
   const { data: bookData, loading } = UseBookData();
   const getData =
     bookData.filter(item => allReadData.includes(item.bookId)) || {};
+  // console.log(getData);
+  // const colors = ['#0088FE', '#00C49F'];
   // console.log(getData);
   const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
 
@@ -30,13 +31,10 @@ const PagesToRead = () => {
     }, ${y + height}
   Z`;
   };
-
   const TriangleBar = props => {
     const { fill, x, y, width, height } = props;
-
     return <path d={getPath(x, y, width, height)} stroke="none" fill={fill} />;
   };
-
   // const CustomTooltip = ({ active, payload, label, bookName }) => {
   //   if (active && payload && payload.length) {
   //     return (
@@ -45,10 +43,8 @@ const PagesToRead = () => {
   //       </div>
   //     );
   //   }
-
   //   return null;
   // };
-
   return (
     <div
       className="mt-5"
@@ -71,6 +67,7 @@ const PagesToRead = () => {
         >
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="bookName" />
+          <YAxis />
           <YAxis
             label={{ value: 'Total Page', angle: -90, position: 'insideLeft' }}
           />
@@ -91,5 +88,4 @@ const PagesToRead = () => {
     </div>
   );
 };
-
 export default PagesToRead;
