@@ -114,7 +114,7 @@ const Header = () => {
               {links}
             </ul>
           </div>
-          <a className="btn btn-ghost text-2xl font-bold text-[#23BE0A]">
+          <a className="btn btn-ghost text-3xl font-extrabold text-[#23BE0A]">
             Book Vibe
           </a>
         </div>

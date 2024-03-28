@@ -86,17 +86,19 @@ const DetailsPage = () => {
             <div className="space-y-3">
               <p className="mt-3">
                 Number Of page:{' '}
-                <span className="font-bold">{fData.totalPages}</span>
+                <span className="font-bold  pl-6">{fData.totalPages}</span>
               </p>
               <p>
-                Publisher: <span className="font-bold">{fData.publisher}</span>
+                Publisher:{' '}
+                <span className="font-bold pl-20">{fData.publisher}</span>
               </p>
               <p>
                 Year of Publishing:{' '}
-                <span className="font-bold">{fData.yearOfPublish}</span>
+                <span className="font-bold pl-4">{fData.yearOfPublish}</span>
               </p>
               <p>
-                yearOfPublish <span className="font-bold">{fData.rating}</span>
+                yearOfPublish{' '}
+                <span className="font-bold pl-14">{fData.rating}</span>
               </p>
             </div>
             <div className="flex justify-start gap-4 mt-7">

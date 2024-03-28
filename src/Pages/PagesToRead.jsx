@@ -17,8 +17,8 @@ const PagesToRead = () => {
   const { data: bookData, loading } = UseBookData();
   const getData =
     bookData.filter(item => allReadData.includes(item.bookId)) || {};
-  console.log(getData);
-  const colors = ['#0088FE', '#00C49F'];
+  // console.log(getData);
+  const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
 
   const getPath = (x, y, width, height) => {
     return `M${x},${y + height}C${x + width / 3},${y + height} ${
@@ -71,7 +71,9 @@ const PagesToRead = () => {
         >
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="bookName" />
-          <YAxis />
+          <YAxis
+            label={{ value: 'Total Page', angle: -90, position: 'insideLeft' }}
+          />
           <Bar
             dataKey="totalPages"
             fill="#8884d8"
