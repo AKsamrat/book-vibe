@@ -11,11 +11,7 @@ const Contact = () => {
               Vivamus in nisl metus? Phasellus.
             </div>
           </div>
-          <img
-            src="/public/ccare.avif"
-            alt=""
-            className="p-6 h-52 md:h-80 w-full"
-          />
+          <img src="ccare.avif" alt="" className="p-6 h-52 md:h-80 w-full" />
         </div>
         <form noValidate="" className="space-y-6">
           <div>
