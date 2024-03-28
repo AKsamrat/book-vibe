@@ -71,6 +71,7 @@ const PagesToRead = () => {
           <YAxis
             label={{ value: 'Total Page', angle: -90, position: 'insideLeft' }}
           />
+          <Tooltip dataKey="bookName"></Tooltip>
           <Bar
             dataKey="totalPages"
             fill="#8884d8"
